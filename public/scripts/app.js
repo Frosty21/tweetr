@@ -46,9 +46,9 @@ loadTweets();
 $(".new-tweet form").submit(function (event) {
     event.preventDefault();
     let $textarea = $(this).find('textarea');
-    let $inputLength = $textarea.val().length;
+    let $inputLength = $textarea.val().trim().length;
     let text = $('[action="/tweets"]').serialize();
-    if ($inputLength.trim() === 0) {
+    if ($inputLength === 0) {
         alert('Please type in the box below the "Compose Tweet"');
         return
     } else if ($inputLength > TWEET_MAX_LENGTH) {
