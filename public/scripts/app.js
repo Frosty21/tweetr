@@ -41,7 +41,7 @@ function loadTweets() {
     })
 }
 $(document).ready(function () {
-// TODO $('new-tweet').hide();
+$('.new-tweet').hide();
 loadTweets();
 $(".new-tweet form").submit(function (event) {
     event.preventDefault();
