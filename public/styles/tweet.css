@@ -6,6 +6,7 @@
   visibility: visible;
 }*/
 
+
 .profile-pic {
   height: 50px;
   width: 50px;
@@ -42,6 +43,13 @@ border-top: 1px solid;
     font-size: 10px;
     color: #8f9698;
 }
+
+.tweet-footer i {
+  position: relative;
+  float: right;
+  
+}
+
 
 .tweet-footer .footer_logo {
   height: 15px;
